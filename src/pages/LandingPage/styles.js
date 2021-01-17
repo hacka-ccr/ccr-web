@@ -50,6 +50,10 @@ export const Btn = styled.button`
 	width: 344px;
 	height: 88px;
 	margin-right: 50px;
+
+	:hover {
+		cursor: pointer;
+	}
 `;
 
 export const BtnText = styled.p`
