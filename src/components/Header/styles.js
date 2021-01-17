@@ -8,8 +8,6 @@ export const Container = styled.div`
 	background-color: white;
 	width: 100%;
 	height: 10%;
-	padding: 20px 0px;
-	margin-top: 10px;
 `;
 
 export const HeaderLogo = styled.img`
@@ -59,6 +57,5 @@ export const NavBtn = styled.button`
 	border-radius: 24px;
 	width: 100px;
 	height: 37px;
-
 	margin-right: 50px;
 `;

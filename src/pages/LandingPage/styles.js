@@ -2,63 +2,60 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	background-color: white;
+	flex-direction: column;
 	width: 100%;
-	height: 10%;
-	padding: 20px 0px;
-	margin-top: 10px;
+	height: 100%;
 `;
 
-export const HeaderLogo = styled.img`
-	margin-left: 50px;
-	width: 40px;
-	height: 40px;
-`;
-
-export const HeaderTitle = styled.div`
-	color: #275e4d;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-	width: 300px;
-	margin-left: 10px;
-`;
-
-export const HeaderUserSettings = styled.div`
+export const MiddleArea = styled.div`
 	display: flex;
-	width: 100%;
-	justify-content: flex-end;
-	margin-right: 20px;
+	flex-direction: row;
+	width: 1700px;
+	margin-top: 40px;
+	align-self: center;
+	height: 700px;
+	align-items: center;
+	justify-content: space-between;
 `;
 
-export const NavItem = styled.p`
-	margin: 0 30px;
+export const BFTextContainer = styled.div`
+	width: 720px;
+	margin-left: 100px;
+`;
+
+export const BFText = styled.p`
 	color: black;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
-	align-self: center;
+	font-size: 65px;
+	font-family: 'Playfair Display', serif;
+`;
+
+export const SmallerText = styled.p`
+	margin-top: 30px;
+	color: black;
+	font-size: 23px;
+	font-family: 'Playfair Display', serif;
+`;
+
+export const Btn = styled.button`
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #1f4239;
+	border-color: black;
+	color: white;
+	border-width: 1px;
+	border-radius: 24px;
+	width: 344px;
+	height: 88px;
+	margin-right: 50px;
 `;
 
 export const BtnText = styled.p`
-	color: black;
+	color: white;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
 `;
 
-export const NavBtn = styled.button`
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background-color: transparent;
-	border-color: black;
-	border-width: 1px;
-	border-radius: 24px;
-	width: 100px;
-	height: 37px;
-
-	margin-right: 50px;
-`;
+export const Img = styled.img``;
