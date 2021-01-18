@@ -10,10 +10,14 @@ import {
 	BtnText,
 	Img,
 } from './styles';
+import { useHistory } from 'react-router-dom';
+
+// import { BrowserRouter as Link } from 'react-router-dom';
 
 import Workers from '../../assets/workers.png';
 
 const LandingPage = () => {
+	const history = useHistory();
 	return (
 		<Container>
 			<Header />
@@ -24,11 +28,10 @@ const LandingPage = () => {
 						Auxiliamos empresas a se manterem de acordo com as políticas
 						ambientais, enquanto construímos um futuro mais digno para os jovens
 					</SmallerText>
-					<Btn>
+					<Btn onClick={() => history.push('/schedule')}>
 						<BtnText>Agendar uma coleta</BtnText>
 					</Btn>
 				</BFTextContainer>
-
 				<Img src={Workers}></Img>
 			</MiddleArea>
 		</Container>
