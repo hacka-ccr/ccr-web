@@ -58,4 +58,8 @@ export const NavBtn = styled.button`
 	width: 100px;
 	height: 37px;
 	margin-right: 50px;
+
+	:hover {
+		cursor: pointer;
+	}
 `;

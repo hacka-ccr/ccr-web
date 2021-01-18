@@ -13,16 +13,48 @@ import {
 	Btn,
 	BtnText,
 	BtnContainer,
+	Wallpaper,
+	Square,
+	SquareContainer,
+	SquareTitle,
+	Squares,
 } from './styles';
 
-import swal from 'sweetalert';
+import Paper from '../../assets/wallpaper.jpg';
+import Mouse from '../../assets/mouse.jpg';
+import Monitor from '../../assets/monitor.jpg';
+import Case from '../../assets/case.webp';
+import Pecas from '../../assets/pecas.jpg';
 
 const Schedule = () => {
 	return (
 		<Container>
 			<Header />
-			<BFText>Agendar coleta</BFText>
-			<FormContainer>
+			<BFText>Loja</BFText>
+			<Wallpaper src={Paper}></Wallpaper>
+			<Squares>
+				<SquareContainer>
+					<Square src={Mouse}></Square>
+					<SquareTitle>Acessórios</SquareTitle>
+				</SquareContainer>
+
+				<SquareContainer>
+					<Square src={Monitor}></Square>
+					<SquareTitle>Monitores</SquareTitle>
+				</SquareContainer>
+
+				<SquareContainer>
+					<Square src={Case}></Square>
+					<SquareTitle>Gabinetes</SquareTitle>
+				</SquareContainer>
+
+				<SquareContainer>
+					<Square src={Pecas}></Square>
+					<SquareTitle>Peças sobressalentes</SquareTitle>
+				</SquareContainer>
+			</Squares>
+
+			{/* <FormContainer>
 				<Row>
 					<InputWrapper>
 						<InputTitle>Nome</InputTitle>
@@ -65,7 +97,7 @@ const Schedule = () => {
 						<BtnText>Enviar</BtnText>
 					</Btn>
 				</BtnContainer>
-			</FormContainer>
+			</FormContainer> */}
 		</Container>
 	);
 };
